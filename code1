@@ -1,0 +1,21 @@
+public class Printing150number {
+
+	public static void main(String[] args) {
+		int n=150;
+		for(int i=1;i<=n;i++) {
+			if((i%7==0) && (i%5==0))
+			{
+			System.out.println("tiptop");	
+			}
+			else if(  i%5==0)
+			{
+				System.out.println("tip");
+			}
+			else if(  i%7==0)
+			{
+			System.out.println("top");	
+			}
+			
+		}
+
+	}
