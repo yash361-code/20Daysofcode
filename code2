@@ -1,0 +1,15 @@
+import java.util.*;
+public class codeofdavinch {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter any name :  ");
+		String p=sc.nextLine();
+		if( p.startsWith("dav") &&  p.endsWith("chi"))
+		{
+			System.out.println("correct code");
+		}
+		else {
+			System.out.println("access denied");
+		}
+	}
