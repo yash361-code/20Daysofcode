@@ -1,0 +1,25 @@
+import java.util.*;
+public class Day3code1 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+      System.out.print("Enter any text : ");
+	String p = sc.nextLine();
+
+	if(p.startsWith("dav")|| p.endsWith("chi")||p.contains("in"))
+	{
+		System.out.println("code accepted");
+	}
+	else
+	{
+		System.out.println("Invalid");
+	}
+	}
+
+
+	
+
+	
+	 
+
+}
