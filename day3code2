@@ -38,7 +38,7 @@ public class day3code2 {
 	        }
 	        else
 	        {
-	            System.out.println("a-1");
+	            System.out.println("-1");
 	        }
 		
 	}
