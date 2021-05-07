@@ -1,8 +1,10 @@
 public static void main(String[] args)
-{
-
-    int arr[] = { 6, 1, 6, 6, 7, 1 };
-    int n = arr.length;
+{ 
+System.out.println("Enter the no of elements  of array")
+ int n = arr.length;
+System.out.println("Enter the elements of array")
+    int arr[] = new Int[n]
+   
 
     System.out.print(notoccuring(arr, n));
 }
