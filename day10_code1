@@ -1,0 +1,59 @@
+import java.util.*;
+public class day10_code1 {
+ 
+    
+	    public static void main(String[] args) {   
+	    	int n =0;
+	         
+	        int p = 0;    
+	            
+	        
+	       
+	            
+	   
+	      
+	        int limit;
+	        Scanner sc=new Scanner(System.in);
+	        System.out.println("enter array list");
+	        n=sc.nextInt();
+	        int arr[]=new int[n];
+	        System.out.println("Enter the elements of array;");
+	        for(int i=0;i<n;i++)
+	        {
+	        	arr[i]=sc.nextInt();
+	        }
+	        System.out.println("Elements of original array: ");    
+	        for (int i = 0; i < arr.length; i++) {     
+	            System.out.print(arr[i] + " ");    
+	        }    
+	           
+	        for (int i = 0; i < arr.length; i++) {     
+	            for (int j = i+1; j < arr.length; j++) {     
+	               if(arr[i] > arr[j]) {    
+	                   p = arr[i];    
+	                   arr[i] = arr[j];    
+	                   arr[j] = p;    
+	               }     
+	            }     
+	        }    
+	          
+	        System.out.println();    
+	        System.out.println("Elements of array sorted in ascending order: ");    
+	        for (int i = 0; i < arr.length; i++) {     
+	            System.out.print(arr[i] + " ");    
+	        }
+	        
+	        int total=(n+1)*(n+2)/2;
+	        System.out.println(total);
+	        for(int i=0;i<n;i++)
+	        {
+	        total -=arr[i];
+	        }
+
+	        System.out.print("Missing value in the array is : "+total);
+	        }
+
+	        
+
+	        
+	    } 
