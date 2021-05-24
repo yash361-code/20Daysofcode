@@ -1,0 +1,20 @@
+import java.util.Scanner;  
+public class  day16code1   
+{  
+public static void main(String[] args)   
+{  
+String p;  
+System.out.println("Enter a string: ");  
+Scanner scanner = new Scanner(System.in);  
+p = scanner.nextLine();  
+scanner.close();                               
+String reversed = reverseString(p);  
+System.out.println("The reversed string is: " + reversed);  
+}  
+public static String reverseString(String s)  
+{  
+if (s.isEmpty())                          
+return s;  
+return reverseString(s.substring(1)) + s.charAt(0);                    
+}  
+}  
